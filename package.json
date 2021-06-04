@@ -1,0 +1,32 @@
+{
+  "name": "express-la-to-ro-crate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./bin/www",
+  "scripts": {
+    "test": "mocha",
+    "start": "node ./bin/www"
+  },
+  "author": {
+    "name": "Moises Sacal Bonequi",
+    "url": "https://github.com/moisbo"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@uts-eresearch/provision-labarchives": "^1.1.6",
+    "archiver": "^5.3.0",
+    "body-parser": "^1.19.0",
+    "connect-memcached": "^1.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-http-proxy": "^1.6.2",
+    "express-session": "^1.17.2",
+    "express-useragent": "^1.0.15",
+    "fs-extra": "^10.0.0",
+    "labarchives-to-ro-crate": "git+https://github.com/UTS-eResearch/labarchives-to-ro-crate.git",
+    "morgan": "^1.10.0",
+    "nocache": "^2.1.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {}
+}

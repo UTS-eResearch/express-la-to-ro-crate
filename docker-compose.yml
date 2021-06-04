@@ -1,0 +1,29 @@
+version: '3.1'
+
+networks:
+  main:
+
+services:
+  express-la-to-ro-crate:
+    environment:
+      - NODE_ENV=development
+    build: .
+    ports:
+      - "8080:8080"
+    expose:
+      - "80"
+    networks:
+      - main
+    volumes:
+      - "./share/:/etc/share/files"
+      - "./config/:/etc/share/config"
+    command: npm start
+
+  memcached:
+    image: memcached
+    ports:
+      - "11211:11211"
+    expose:
+      - "11211"
+    networks:
+      - main

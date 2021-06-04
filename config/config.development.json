@@ -1,0 +1,20 @@
+{
+  "morgan": "combined",
+  "session": {
+    "secret": "change me to a real secret",
+    "name": "session",
+    "expiry": 24,
+    "server": "memcached:11211"
+  },
+  "key": {
+    "akid": "",
+    "password": "",
+    "baseurl": "",
+    "api": "/api"
+  },
+  "outDir": "./share",
+  "api": {
+    "enabled": true,
+    "token": "my_exporter_token"
+  }
+}
